@@ -1,6 +1,6 @@
        $(document).ready(function() {
 
-  var apiRoot = 'https://lit-dusk-81361.herokuapp.com/v1/task/';
+  var apiRoot = 'http://localhost:8888/tasks_frontend/';
   var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   var tasksContainer = $('[data-tasks-container]');
 
