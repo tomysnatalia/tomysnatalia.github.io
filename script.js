@@ -122,3 +122,5 @@
   tasksContainer.on('click','[data-task-edit-abort-button]', toggleEditingState);
   tasksContainer.on('click','[data-task-submit-update-button]', handleTaskUpdateRequest);
   tasksContainer.on('click','[data-task-delete-button]', handleTaskDeleteRequest);
+});
+
