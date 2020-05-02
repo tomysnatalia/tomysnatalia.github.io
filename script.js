@@ -1,7 +1,7 @@
        $(document).ready(function() {
 
   var apiRoot = 'https://lit-dusk-81361.herokuapp.com/v1/task/';
-  const trelloApiRoot = 'https://api.trello.com/1/cards?key=6d3b645a1fede32760d97e1e1d668557&token=4feebb2568932eec97b0a74f281e3fa198d8e323a625c7d2124ec63f04fa22b8';
+  const trelloApiRoot = 'http://localhost:8080/v1/trello/';
   const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   const $tasksContainer = $('[data-tasks-container]');
 
