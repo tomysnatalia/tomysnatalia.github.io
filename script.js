@@ -1,10 +1,11 @@
        $(document).ready(function() {
 
   var apiRoot = 'https://lit-dusk-81361.herokuapp.com/v1/task/';
-  var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
-  var tasksContainer = $('[data-tasks-container]');
+  const trelloApiRoot = 'http://localhost:8080/v1/trello/';
+  const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
+  const $tasksContainer = $('[data-tasks-container]');
 
-   var availableBoards = {};
+  var availableBoards = {};
   var availableTasks = {};
 
   // init
