@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   var apiRoot = 'https://lit-dusk-81361.herokuapp.com/v1/task/';
-  const trelloApiRoot = 'https://api.trello.com/1/cards?/';
+  const trelloApiRoot = 'http://localhost:8080/v1/trello/';
   var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   var tasksContainer = $('[data-tasks-container]');
 
@@ -45,10 +45,10 @@ $(document).ready(function() {
     });
   }
 
-  function handleDatatableRender(taskData, boards) {
-    $tasksContainer.empty();
-    boards.forEach(board => {
-      availableBoards[board.id] = board;
+  function handleDatatableRender(data) {
+    tasksContainer.empty();
+    data.forEach(function(task) {
+      createElement(task).appendTo(tasksContainer);
     });
      taskData.forEach(function(task) {
       var $datatableRowEl = createElement(task);
